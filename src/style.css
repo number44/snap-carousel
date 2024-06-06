@@ -10,7 +10,7 @@ body {
 
 .carousel {
   display: flex;
-  overflow-x: auto;
+  overflow-x: hidden;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 80%;
