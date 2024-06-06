@@ -10,7 +10,7 @@ body {
 
 .carousel {
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   width: 80%;
@@ -51,4 +51,13 @@ button {
 button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.carousel {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
